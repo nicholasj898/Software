@@ -2,25 +2,18 @@
 <html>
 <head>
   <title>Random Image Display</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    img {
-      width: 800px;
-      height: 800px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img id="randomImage" src="" alt="Click me to begin looking at cats" onclick="changeImage(this)">
-  
+  <div class="container">
+    <button class="button" onclick="changeImage()">Change Image</button>
+    <div class="image-container">
+      <img id="randomImage" src="" alt="Random Image" class="image">
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
 

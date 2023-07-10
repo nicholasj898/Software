@@ -1,5 +1,3 @@
-// JavaScript file: random_image.js
-
 var images = [
     "image-1.jpg",
     "image-2.jpg",
@@ -7,7 +5,13 @@ var images = [
     "image-4.jpg"
   ];
   
-  function changeImage(imageElement) {
+  document.addEventListener("DOMContentLoaded", function() {
+    var imageElement = document.getElementById("randomImage");
+    imageElement.addEventListener("click", changeImage);
+  });
+  
+  function changeImage() {
     var randomIndex = Math.floor(Math.random() * images.length);
+    var imageElement = document.getElementById("randomImage");
     imageElement.src = images[randomIndex];
   }
