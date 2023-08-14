@@ -7,7 +7,7 @@ websiteLink.addEventListener("click", function(event) {
 const changeColorButton = document.getElementById("changeColorButton");
 changeColorButton.addEventListener("click", function() {
   const informationDiv = document.querySelector(".information");
-  // Generate a random color in hexadecimal format
+  //Generate a random color in hexadecimal format
   const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
   informationDiv.style.backgroundColor = randomColor;
 });
@@ -15,19 +15,25 @@ changeColorButton.addEventListener("click", function() {
 const changeFontButton = document.getElementById("changeFontButton");
 changeFontButton.addEventListener("click", function() {
   const informationDiv = document.querySelector(".information");
-  // Generate a random font family
+  //Generate a random font family
   const fonts = ["Arial, sans-serif", "Times New Roman, serif", "Courier New, monospace", "Verdana, sans-serif", "Georgia, serif", "Comic Sans MS, cursive"];
   const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
   informationDiv.style.fontFamily = randomFont;
 });
 
-const changeTextButton = document.getElementById("changeTextButton");
+  //Change Name
+const changeTextButton = document.getElementById("changeNameButton");
 changeTextButton.addEventListener("click", function() {
-  const newName = document.getElementById("changeText").value;
+  const newName = document.getElementById("changeText1").value;
   const nameElement = document.getElementById("name");
   const positionElement = document.getElementById("position");
   nameElement.textContent = newName;
-  // If you want to update the position text as well, you can uncomment the line below
-  // positionElement.textContent = "New Position";
 });
-
+  //Change Position
+const changePosButton = document.getElementById("changePositionButton");
+changePosButton.addEventListener("click", function() {
+  const newName = document.getElementById("changeText2").value;
+  const nameElement = document.getElementById("position");
+  const positionElement = document.getElementById("position");
+  nameElement.textContent = newName;
+});
