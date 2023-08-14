@@ -29,6 +29,7 @@ changeTextButton.addEventListener("click", function() {
   const positionElement = document.getElementById("position");
   nameElement.textContent = newName;
 });
+
   //Change Position
 const changePosButton = document.getElementById("changePositionButton");
 changePosButton.addEventListener("click", function() {
