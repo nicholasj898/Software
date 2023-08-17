@@ -38,3 +38,11 @@ changePosButton.addEventListener("click", function() {
   const positionElement = document.getElementById("position");
   nameElement.textContent = newName;
 });
+
+const changeNumberButton = document.getElementById("changeNumberButton");
+changeNumberButton.addEventListener("click", function() {
+  const newName = document.getElementById("changeText3").value;
+  const nameElement = document.getElementById("number");
+  const positionElement = document.getElementById("phone");
+  nameElement.textContent = newName;
+});
