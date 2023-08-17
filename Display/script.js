@@ -44,5 +44,5 @@ changeNumberButton.addEventListener("click", function() {
   const newName = document.getElementById("changeText3").value;
   const nameElement = document.getElementById("number");
   const positionElement = document.getElementById("phone");
-  nameElement.textContent = newName;
+  nameElement.textContent = nameElement.textContent = "Phone: " + newName;
 });
