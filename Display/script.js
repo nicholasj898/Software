@@ -46,3 +46,13 @@ changeNumberButton.addEventListener("click", function() {
   const positionElement = document.getElementById("phone");
   nameElement.textContent = nameElement.textContent = "Phone: " + newName;
 });
+
+const changeWebsiteButton = document.getElementById("changeWebsiteButton");
+changeWebsiteButton.addEventListener("click", function() {
+  const newWebsite = document.getElementById("changeText4").value;
+  const websiteElement = document.getElementById("website");
+  
+  // Update the link's href attribute and text content
+  websiteElement.href = newWebsite;  // Set the actual website URL
+  websiteElement.textContent = newWebsite;  // Display the website URL as text
+});
